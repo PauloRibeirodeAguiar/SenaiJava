@@ -34,7 +34,7 @@ public class Baskara extends javax.swing.JFrame {
         txbNum2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txbNum3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnCalcular = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -50,10 +50,10 @@ public class Baskara extends javax.swing.JFrame {
 
         jLabel3.setText("Numero3:");
 
-        jButton1.setText("Calcular");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnCalcularActionPerformed(evt);
             }
         });
 
@@ -72,7 +72,7 @@ public class Baskara extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton1)
+                            .addComponent(btnCalcular)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel1)
@@ -138,14 +138,14 @@ public class Baskara extends javax.swing.JFrame {
                     .addComponent(jLabel6)
                     .addComponent(lblDelta))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnCalcular)
                 .addGap(18, 18, 18))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
        
        double num1 = 0;
        double num2 = 0;
@@ -165,7 +165,7 @@ public class Baskara extends javax.swing.JFrame {
         lblX1.setText(""+x1);
         lblX2.setText(""+x2);
         lblDelta.setText(""+delta);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,7 +193,7 @@ public class Baskara extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnCalcular;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
